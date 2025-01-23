@@ -1,10 +1,8 @@
 const Button = ({
   text,
-  outline,
   style,
 }: {
   text: string;
-  outline?: boolean;
   style?: { padding?: string; others?: string; bg?: string };
 }) => {
   return (

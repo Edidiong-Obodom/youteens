@@ -1,8 +1,6 @@
 import ceo from "../assets/ceo.svg";
 import founder from "../assets/founder.svg";
 import coo from "../assets/coo.svg";
-import elipse1 from "../assets/Ellipse-4.png";
-import elipse2 from "../assets/Ellipse-3.svg";
 import Card from "./ui/card";
 import { randomNumber } from "../lib";
 

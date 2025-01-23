@@ -3,7 +3,6 @@ import support from "../assets/donate-logo.svg";
 import prayer from "../assets/prayer-logo.svg";
 import volunteer from "../assets/volunteer-icon.svg";
 import donate from "../assets/iconoir_donate.svg";
-import { duplicateArrayElements } from "../lib/arrays";
 import { randomNumber } from "../lib";
 
 const Welcome = () => {
@@ -46,7 +45,7 @@ const Welcome = () => {
         </div>
       </div>
       <div className="eddyContainer grid grid-cols-1 md:grid-cols-4 gap-6 my-[4rem]">
-        {cardDetails.map((value, i) => (
+        {cardDetails.map((value) => (
           <Card
             key={randomNumber()}
             style="relative eddyContainer flex flex-col items-center"
