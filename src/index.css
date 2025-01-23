@@ -1,0 +1,209 @@
+@import "./styles/tailwind.css";
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Parent Styles */
+
+/* Fonts */
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-script-bold {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* Fonts */
+
+body {
+  @apply poppins-regular;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.eddyNav {
+  @apply px-6 py-8 mx-auto max-w-[400px] md:max-w-[1150px];
+}
+.eddyContainer {
+  @apply px-3 mx-auto max-w-[400px] md:max-w-[1120px];
+}
+.eddyContainerFull {
+  @apply px-3 mx-auto max-w-[600px] md:max-w-[1200px];
+}
+.coverScreen {
+  @apply w-full h-full absolute  overflow-y-scroll scrollbar-hide;
+}
+/* Parent Styles */
+
+/* Backgrounds */
+.hero-bg {
+  width: "100%";
+  min-height: 400px;
+  background-color: rgba(132, 129, 125, 0.467);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* display: flex;
+    justify-content: center;
+    text-align: center; */
+}
+
+.volunteer-bg {
+  width: "100%";
+  background-color: rgba(132, 129, 125, 0.467);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/volunteer-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.donate-bg {
+  width: "100%";
+  background-color: rgba(132, 129, 125, 0.467);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/donate-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.partner-bg {
+  width: "100%";
+  background-color: rgba(132, 129, 125, 0.467);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Backgrounds */
+
+/* Utility Styles */
+
+button.no-style {
+  outline-color: transparent;
+  background-color: transparent;
+}
+
+.execImg {
+  height: 250px;
+}
+.execImg img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Utility Styles */
