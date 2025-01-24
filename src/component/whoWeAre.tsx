@@ -38,6 +38,7 @@ const WhoWeAre = () => {
         <div>
           <Button
             text="Discover More"
+            navigateTo="/about"
             style={{ others: "shadow-2xl rounded-full poppins-semibold" }}
           />
         </div>

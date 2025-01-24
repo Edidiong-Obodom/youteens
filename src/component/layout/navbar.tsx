@@ -1,8 +1,14 @@
 import { useState } from "react";
 import ToggleIcon from "../../assets/toggleIcon";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
+  const location = useLocation();
+
+  const refresh = () => {
+    return window.location.reload();
+  };
 
   const handleToggle = () => {
     if (toggle) {
@@ -14,11 +20,11 @@ const Navbar = () => {
   return (
     <nav className="eddyNav flex flex-col md:flex-row justify-between">
       <div className="flex flex-row justify-between">
-        <div className="cursor-pointer">
+        <button onClick={refresh} onKeyDown={refresh}>
           <h1 className="oleo-script-bold text-[24px] font-color-active">
             Youteens
           </h1>
-        </div>
+        </button>
         <button
           className={`inline md:hidden no-style w-fit`}
           onClick={handleToggle}
@@ -35,28 +41,54 @@ const Navbar = () => {
             : "block pt-[2rem] pb-[0.5rem] md:py-[0rem]"
         } cursor-pointer`}
       >
-        Home
+        <NavLink
+          to="/"
+          className={`${
+            location.pathname === "/" ? "poppins-bold text-[#CE7C02]" : ""
+          }`}
+        >
+          Home
+        </NavLink>
       </div>
       <div
         className={`${
           toggle ? "hidden md:block" : "block py-[0.5rem] md:py-[0rem]"
         } cursor-pointer`}
       >
-        About
+        <NavLink
+          to="/about"
+          className={`${
+            location.pathname === "/about" ? "poppins-bold text-[#CE7C02]" : ""
+          }`}
+        >
+          About
+        </NavLink>
       </div>
       <div
         className={`${
           toggle ? "hidden md:block" : "block py-[0.5rem] md:py-[0rem]"
         } cursor-pointer`}
       >
-        Donations
+        <a
+          href="https://wa.me/qr/VBB5GN5NLDDNF1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donations
+        </a>
       </div>
       <div
         className={`${
           toggle ? "hidden md:block" : "block py-[0.5rem] md:py-[0rem]"
         } cursor-pointer`}
       >
-        Contact
+        <a
+          href="https://wa.me/qr/VBB5GN5NLDDNF1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );

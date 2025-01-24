@@ -10,22 +10,22 @@ const Welcome = () => {
     {
       visual: { image: support, bg: "bg-[#e3f0e0]" },
       header: "Support",
-      body: "Lorem ipsum dolor sit amet consectetur. Eu aliquet ultrices nunc.",
+      body: "Your support empowers us to provide education, skills, and opportunities for disadvantaged youths. Together, we can create lasting change.",
     },
     {
       visual: { image: prayer, bg: "bg-[#c6c1a9]" },
       header: "Prayers",
-      body: "Lorem ipsum dolor sit amet consectetur. Eu aliquet ultrices nunc.",
+      body: "Your prayers uplift and inspire us to continue transforming the lives of marginalized youths. Pray with us for a brighter future.",
     },
     {
       visual: { image: volunteer, bg: "bg-[#c9c9c9]" },
       header: "Volunteer",
-      body: "Lorem ipsum dolor sit amet consectetur. Eu aliquet ultrices nunc.",
+      body: "Volunteer with us and help empower young leaders. Your time and skills can transform lives and build stronger communities.",
     },
     {
       visual: { image: donate, bg: "bg-[#d6c1c1]" },
       header: "Donations",
-      body: "Lorem ipsum dolor sit amet consectetur. Eu aliquet ultrices nunc.",
+      body: "Every donation counts. Your generosity funds education, training, and projects that give underprivileged youths a chance to thrive.",
     },
   ];
 
